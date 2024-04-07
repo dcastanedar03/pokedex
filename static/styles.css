@@ -1,0 +1,303 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+button {
+  color: #4c4cff;
+  background-color: #ffcc00;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  padding: 1.5rem 3rem;
+  border: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+    background-color: yellow;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  }
+  font-family: 'Press Start 2P', cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+button, [role="button"] {
+  cursor: pointer;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 1em;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 200%;
+}
+
+p{
+  color: red;
+}
+
+img,
+svg {
+  display: block;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.audio{
+  border-radius: 20% 20% 20% 20%;
+  
+}
+
+.flex {
+  display: flex;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.columns{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.start{
+  justify-content: flex-start;
+}
+.around{
+  justify-content: space-around;
+}
+.pequeño{
+  width: 200px;
+  height: 200px;
+}
+.grande{
+  width: 400px;
+  height: 400px;
+}
+.rounded{
+  border-radius: 20% 20% 20% 20%;
+  border: 2px solid #ffcc00;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.5), 
+              0 0 10px rgba(76, 76, 255, 0.5), 
+              0 0 10px rgba(255, 76, 76, 0.5), 
+              0 0 10px rgba(140, 239, 172, 0.5);
+}
+.overflow{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: center;
+}
+.centro{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+.Container{
+  border: 2px solid #0011ff;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.5), 
+              0 0 10px rgba(76, 76, 255, 0.5), 
+              0 0 10px rgba(255, 76, 76, 0.5), 
+              0 0 10px rgba(140, 239, 172, 0.5);
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  &:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    transform: scale(1.10);
+  }
+}
+.principal{
+  text-align: center;
+  font-size: 300%;
+  margin: center;
+  color: #ffcc00;
+  background-color: #4c4cff;
+  font-family: 'Press Start 2P', cursive;
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 20px;
+  border-radius: 1.5rem;
+}
+body{
+  background: url("https://www.icegif.com/wp-content/uploads/2021/11/icegif-110.gif") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Press Start 2P', cursive;
+  margin: 0;
+  padding: 20px;
+}
+.link{
+  display: flex;
+  background-color: #ffcc00;
+  justify-content: flex-end;
+}
+.modal{
+  position:absolute;
+  color: #ff4c4c;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  right: 15%;
+  width: 35%;
+  height: 50%;
+  z-index: 1;
+  background-color: #4c4cff;
+  display: flex;
+  overflow: auto;
+  border-radius: 1.5rem;
+  
+}
+.m {
+  display: flex;
+  color: #ffcc00;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #ffcc00;
+  border-radius: 1.5rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 30rem;
+  max-height: 40rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.m_title{
+  font-size: 2.5rem;
+}
+.m_paragraph{
+  margin-bottom: 10px;
+}
+.m_close{
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff4c4c;
+  border: none;
+  border-radius: 1rem;
+  display: inline-block;
+  font-weight: 300;
+  transition: background-color .3s;
+  padding: 1rem 2rem;
+  &:hover{
+    background-color: #fff;
+    color: #ff4c4c;
+  }
+}
+.form{
+  display: flex;
+  color: #ffcc00;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #ffcc00;
+  border-radius: 1.5rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 30rem;
+  max-height: 40rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  form{
+    display: block;
+    grid-template-columns: 100px auto;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  input {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    padding-right: 3rem;
+    font-size: 1.2rem;
+    border: 2px solid #ffcc00;
+    border-radius: 0.5rem;
+    &:focus {
+      outline: none;
+      border-color: #ff4c4c;
+    }
+  }
+  button{
+    display: grid;
+    grid-template-columns: 100px auto;
+    position: relative ;
+    margin-top: 1rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    background-color: transparent;
+    border: 2px solid yellow;
+    color: yellow;
+    &:hover {
+      color: black;
+      background-color: #ffcc00;
+      box-shadow: 0 0 20px rgba(207, 204, 20, 0.7);
+    }
+  }
+  button.reset{
+    background-color: transparent;
+    border: 2px solid #ff4c4c;
+    color: #ff4c4c;
+    &:hover {
+      color: #fff;
+      background-color: #ff4c4c;
+      box-shadow: 0 0 20px rgba(255, 78, 51, 0.5);
+    }
+  }
+  .span2 {
+    grid-column: span 2;
+  }
+  .error{
+    color: #ff4c4c;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid #ff4c4c;
+    box-shadow: 0 0 10px rgba(255, 78, 51, 0.5);
+    background-color: rgba(255, 78, 51, 0.1);
+    margin:auto;
+    width: 100%
+
+  }
+}
